@@ -1,5 +1,9 @@
 <h3>Reviews</h3>
 
+<p>
+  Price: $<%= @product.formatted_price %>
+</p>
+
  <p>Reviews for <%= @product.name %></p>
 
  <% @product.reviews.each do |review| %>
@@ -12,7 +16,7 @@
      <% end %>
    </p>
  <% end %>
- 
+
  <% if current_user %>
   <h4>New Review</h4>
 

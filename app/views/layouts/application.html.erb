@@ -14,15 +14,21 @@
       <p id="alert"><%= flash[:alert] %></p>
     <% end %>
 
-    <%= yield %>
+    <div class="yield">
+      <%= yield %>
+    </div>
 
-    <p class="userinfo">
+    <div class="userinfo">
       <% if current_user %>
-        Signed in as <%= current_user.email %>. <%= link_to "Log out", session_path("current"), :method => :delete %>
+        <p class="links">
+          Signed in as <%= current_user.email %>. <%= link_to "Log out", session_path("current"), :method => :delete %>
+        </p>
       <% else %>
-        <%= link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %>
+        <p class="links">
+          <%= link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %>
+        </p>
       <% end %>
-    </p>
+    </div>
 
   </body>
 </html>

@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-image: url("forest.jpg");
+  margin: 0;
+}
+.userinfo {
+  text-align: center;
+}
+.links {
+  color: white;
+  font-size: 200%;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+}
+.yield {
+  min-height: 500px;
+}
+#notice {
+  color: white;
+  background-color: green;
+  width: 300px;
+  height: 100px;
+  padding-top: 20px;
+  text-align: center;
+  margin: auto;
+  font-size: 250%;
+}
